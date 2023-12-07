@@ -1,16 +1,15 @@
 #Unit 4: to read and write data.
 
-#Tipos de datos tabulares
-#Organizado en archivos con renglones y columnas.
+#Types of tabular data
 #Data organized in files using rows and columns.
 
-#Con R es muy facil añadir información de otros programas.
-#Se puede importat archivos de texto, software de estadística, hojas de cálculo, etc.
-#Se puede especificar la ubicacion (online/offline) desde un url.
+#With R is very easy to add information from other programs.
+#It can import text files, statistic softwares, spreadsheets, etc.
+#It can specify the ubication (online/ offline) from an URL.
 
-###Funciones para leer datos en R.####
+###Functions to read data in R.####
 ?read.table
-#Es la funcion más usada para leer datos.
+#It is the most used function to read data in R.
 
 #Por omisión, por defecto/by omission, by default
 #Ignora las lineas con '#'/ it ignores the lines with '#'
