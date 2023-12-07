@@ -1,6 +1,5 @@
 #To obtain help.
 
-#Este comando nos da un meno con recursos como manuales, referencias para aprender R y Rstudio.
 #This command gives is a menu with resources like manuals, references to learn about R and Rstudio.
 help.start()
 
