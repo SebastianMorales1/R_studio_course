@@ -1,32 +1,36 @@
 #Unit 4: to read and write data.
+#How to load datasets and save them in R.
 
 #Types of tabular data
 #Data organized in files using rows and columns.
 
 #With R is very easy to add information from other programs.
-#It can import text files, statistic softwares, spreadsheets, etc.
-#It can specify the ubication (online/ offline) from an URL.
+#It can import text files, other statistic soft wares, spreadsheets, etc.
+#It can specify the location (online/ offline) from an URL.
+
+#Different variabes are separated with a special character, callerd "Delimitator".
 
 ###Functions to read data in R.####
 ?read.table
 #It is the most used function to read data in R.
 
-#Por omisión, por defecto/by omission, by default
-#Ignora las lineas con '#'/ it ignores the lines with '#'
-#Descubre el numero de renglones
-#Averiguara de que tipo de variable es cada columna.
-#Por ejemplo: << datos <- read.table("datos.txt") >>
+#By omission, by default
+#It ignores the lines with '#'
 
-#Parámetros más importantes de la funcion "read.table"
-#Se usan cuando el archivo es muy grande, porque sirven para mejorar el rendimiento de la lectura del archivo.
+#To know the number of rows
+#To know which type of variabe is each column.
+#For example: << datos <- read.table("datos.txt") >>
+
+#The most important parametres of the funcion "read.table"
+#They are used if the file is too big, because they are used to improve the performance of the file reading.
 read.table(file = , 
            header = ,
            sep = ,
            colClasses = , 
-           #Es recomendable usar este parametro
-           #Si es explícito el tipo de variable en cada columna, la lectura es más eficiente.
+           #It is recommended to use this parametre.
+           #If the type of variable of each colmun is explicit, the reading is more efficient.
            nrows = ,
-           #Usar este parametro desde el principio
+           #It is recommended to use this parametre from the beginning
            comment.char = ,
            skip = ,
            stringsAsFactors = )
@@ -57,6 +61,8 @@ source() #Para leer los datos de vuelta
 dget()
 load()
 unserialize()
+
+
 ###Existen funcines para escribir datos en R.####
 write.table()
 #La funcion para escribir datos por defecto.
@@ -69,13 +75,14 @@ dput
 save
 serialize
 
+
 ####Ejercicio practico de unidad 4####
 datos <- read.table("swirl_temp/inmigintnalpry.csv",header=TRUE, sep=",", 
                     fileEncoding = "latin1"
                     #Se usa para abarcar mas simbolos que no usan otros idiomas
                     #Por ejemplo, la "ñ"
                     )
-View(datos) #Para ver la base de datis
+View(datos) #Para ver la base de datos
 
 datos_2 <- read.table("swirl_temp/inmigintnalpry.csv", header=TRUE, sep=",")
 #RESULTADO de "datos_2"
